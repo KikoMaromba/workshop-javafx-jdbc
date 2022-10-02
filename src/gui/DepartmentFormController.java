@@ -82,7 +82,7 @@ public class DepartmentFormController implements Initializable{
 	
 	private void notifyDataChangeListerners() {
 		for (DataChangeListener listerner : dataChangeListeners) {
-			listerner.onDataChange();
+			listerner.onDataChanged();
 		}
 	}
 

@@ -114,7 +114,7 @@ public class SellerListController implements Initializable, DataChangeListener {
 			SellerFormController controller = loader.getController();
 			controller.setSeller(obj);
 			controller.setSellerService(new SellerService());
-			controller.subscribeDataChangeListerne(this);
+			controller.subscribeDataChangeListener(this);
 			controller.upDateFormData();
 
 			Stage dialogStage = new Stage();
@@ -126,12 +126,13 @@ public class SellerListController implements Initializable, DataChangeListener {
 			dialogStage.showAndWait();
 
 		} catch (IOException e) {
-			Alerts.showAlert("IOException", "Erro loading view", e.getMessage(), AlertType.ERROR);
+			Alerts.showAlert("IO Exception", "Erro loading view", e.getMessage(), AlertType.ERROR);
+			e.printStackTrace();
 		}  
 	}
 
 	@Override
-	public void onDataChange() {
+	public void onDataChanged() {
 		updateTableView();
 	}
 
