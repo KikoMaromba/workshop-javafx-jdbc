@@ -43,7 +43,11 @@
                   <Insets top="5.0" />
                </GridPane.margin></TextField>
             <TextField fx:id="txtName" promptText="Nome do Vendedor" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtEmail" promptText="Email do Vendedor" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <DatePicker fx:id="dpBirthDate" promptText="Birth Date" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtBaseSalary" promptText="Salário Base" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Label fx:id="labelErrorName" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ComboBox fx:id="comboBoxDepartment" prefWidth="150.0" promptText="Selecione o Departamento" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
                <children>
                   <Button fx:id="btSave" mnemonicParsing="false" onAction="#onBtSaveAction" text="Save" />
@@ -65,18 +69,14 @@
                   <Insets left="10.0" />
                </GridPane.margin>
             </Label>
-            <TextField fx:id="txtEmail" promptText="Email do Vendedor" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField fx:id="txtBaseSalary" promptText="Salário Base" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Label text="Department" GridPane.rowIndex="5">
                <GridPane.margin>
                   <Insets left="10.0" />
                </GridPane.margin>
             </Label>
-            <DatePicker fx:id="dpBirthDate" promptText="Birth Date" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Label fx:id="labelErrorEmail" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="2" />
             <Label fx:id="labelErrorBirthDate" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="3" />
             <Label fx:id="labelErrorBaseSalary" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <ComboBox fx:id="comboBoxDepartment" prefWidth="150.0" promptText="Selecione o Departamento" GridPane.columnIndex="1" GridPane.rowIndex="5" />
          </children>
       </GridPane>
    </children>
